@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="tudo">
+    <div class="topo">
+        <div class="titulo">DrivenEats</div>
+        <div class="subtitulo">Sua comida em 6 minutos</div>
+    </div> <!-- fecha topo  -->
+
+<div class="feed">
+    <div class="intros">
+        Primeiro, seu prato
+    </div>
+
+    <div class="tipo">
+
+        <div class="item" id='frango-c' onClick='highlight1();' > <!-- prato 1  -->
+        <img src="images/flango.jpg" />
+            <h1> Frango Empanado</h1>
+            <h2>Franguinho gostoso!</h2>
+            <h3>R$24,00</h3>
+        </div>
+        
+
+        <div class="item" id='moqueca-c' onClick='highlight2();' > <!-- prato 2  -->
+        <img src="images/moqueca.jpg" />
+            <h1> Moqueca</h1>
+            <h2> Com Camarão</h2>
+            <h3>R$28,00</h3>
+        </div>
+
+        <div class="item" id='yakissoba-c' onClick='highlight3();' > <!--  prato 3  -->
+        <img src="images/yakissoba.jpg" />
+        <h1> Yakissoba</h1>
+        <h2>Yakissoba misto</h2>
+        <h3>R$23,00</h3>
+        </div>
+
+    </div><!-- fecha todospratos  -->
+
+    <div class="intros">
+        Agora, sua bebida
+    </div>
+    
+    <div class="tipo">
+
+        <div class="item" id='pepsi-c' onClick='highlight4();' > <!--  bebida 1 -->
+        <img src="images/pepsi.jpg" />
+        <h1>Pepsi</h1>
+        <h2>Pode ser?</h2>
+        <h3>R$4,00</h3>
+        </div>
+
+        <div class="item" id='coca-c' onClick='highlight5();' > <!--  bebida 2 -->
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBrKJJfCjc0lgd5EPrQzhS5EG6sCq0MzhLeA&usqp=CAU" />
+        <h1>Coca-Cola</h1>
+        <h2>Beeem gelada</h2>
+        <h3>R$5,00</h3>
+         </div>
+
+         <div class="item" id='agua-c' onClick='highlight6();' > <!--  bebida 3 -->
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlFA-335FUF8NKH90HiHPOAXgtRW0rYGtXXQ&usqp=CAU" />
+        <h1>Água</h1>
+        <h2>Vamo hidratar?</h2>
+        <h3>R$3,00</h3>
+        </div>
+
+    </div> <!-- fecha todasbebidas  -->
+    
+    <div class="intros">
+        Por fim, sua sobremesa
+    </div>
+
+    <div class="tipo">
+
+       
+        <div class="item" id='tiramisu-c' onClick='highlight7();'> <!--  sobremesa 1 -->
+        <img src="images/tiramisu.jpg" />
+        <h1> Tiramisu </h1>
+        <h2>Super cremoso!</h2>
+        <h3>R$20,00</h3>
+        </div>
+        
+        
+
+        <div class="item" id='pudim-c' onClick='highlight8();'> <!--  sobremesa 2 -->
+        <img src="/images/pudim de leite.jpg" alt="">
+        <h1> Pudim de leite </h1>
+        <h2>Receita de mãe</h2>
+        <h3>R$18,00</h3>
+        </div>
+        </a>
+
+        <div class="item" id="brigadeiro-c" onClick='highlight9()' > <!--  sobremesa 3 -->
+        <img src="/images/brigadeiro.jpg" />
+        <h1> Brigadeiro </h1>
+        <h2>Bem chic</h2>
+        <h3>R$15,00</h3>
+        </div>
+
+    </div><!-- fecha todassobrem -->
+ 
+
+</div>   <!-- fecha feed  -->
+
+
+<div class="fechar">
+    <button > Selecione os 3 itens para fechar o pedido </button>
+</div>
+</div>
+<script src="/scripts.js"></script>
+</body>
+</html>
