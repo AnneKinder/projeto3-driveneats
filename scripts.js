@@ -41,6 +41,14 @@ function selecSobre(sobreClicada) {
     let opcao3 = document.querySelector(".tudo .feed .sobremesa .greenborder h1").innerHTML;
     let preco3 = document.querySelector(".tudo .feed .sobremesa .greenborder h3").innerHTML;
 
+     document.querySelector(".h1-1")
+    document.querySelector(".h3-1").innerHTML=opcao1;
+
+    document.querySelector(".h1-2").innerHTML
+    document.querySelector(".h3-2").innerHTML
+
+    document.querySelector(".h1-3").innerHTML
+    document.querySelector(".h3-3").innerHTML
     
 
     }
