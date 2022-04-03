@@ -147,10 +147,22 @@ h3{
     line-height: 19px;
     color: #000000;
 }
-
 button{
-    border-style: none;
-     cursor: pointer;
+        width: auto;
+        height: 61px;
+        background: #CBCBCB;
+        border-radius: 50px;
+        border:#FFFFFF;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 350;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        letter-spacing: 0.018em;
+        color: #FFFFFF;
+        border-style: none;
+        cursor: pointer;
 }
 .item{
     width: 172px;
