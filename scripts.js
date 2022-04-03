@@ -1,81 +1,29 @@
-let isbutton1active;
-let isbutton2active;
-let isbutton3active;
 
-function selecfrango(){
-
-    document.getElementById('frango-c').classList.toggle('greenborder')
- 
-
-    if 
-    
-    (document.getElementById('frango-c').classList.contains('greenborder')) {
-        document.getElementById('moqueca-c').classList.remove('greenborder')
-        document.getElementById('yakissoba-c').classList.remove('greenborder')}
-
-
+function selecPrato(pratoClicado) { //pode colocar elemento que nao está no HTML, pois usou o this. só vai usar esse elemento pra add classe no js.
+    const selecao = document.querySelector(".greenborder");
+    if (selecao !== null) { //se tiver algum já selecionado -> retira .greenborder
+      selecao.classList.toggle("greenborder");
     }
 
+    pratoClicado.classList.toggle("greenborder"); //faz esse primeiro: adicionar a classe no clicado;
+  }
 
-//function highlight1(){
-//    document.getElementById('frango-c').style.border = "4px solid green";
   
-//}
+function selecBebida(bebidaClicada) {
+    const selecao = document.querySelector(".greenborder");
+    if (selecao !== null) {
+      selecao.classList.toggle("greenborder");
+    }
 
-function highlight2(){
+    bebidaClicada.classList.toggle("greenborder");
+  }
 
-    document.getElementById('moqueca-c').style.border = "4px solid green";
-
-}
-
-function highlight3(){
-
-    document.getElementById('yakissoba-c').style.border = "4px solid green";
   
-}
+function selecSobre(sobreClicada) {
+    const selecao = document.querySelector(".greenborder");
+    if (selecao !== null) {
+      selecao.classList.toggle("greenborder");
+    }
 
-function highlight4(){
-    document.getElementById('pepsi-c').style.border = "4px solid green";
-  
-}
-
-function highlight5(){
-
-    document.getElementById('coca-c').style.border = "4px solid green";
- 
-}
-
-function highlight6(){
-
-    document.getElementById('agua-c').style.border = "4px solid green";
- 
-}
-
-
-function highlight7(){
-    document.getElementById('tiramisu-c').style.border = "4px solid green";
-  
-}
-
-function highlight8(){
-
-    document.getElementById('pudim-c').style.border = "4px solid green";
- 
-}
-
-function highlight9(){
-
-    document.getElementById('brigadeiro-c').style.border = "4px solid green";
- 
-}
-
-function fecharpedido (){
-    document.getElementById('popup').style.display = 'block';
-
-}
-
-const button= document.querySelector ('button')
-const popup= document.querySelector ('.popup-wrapper')
-button.addEventListener('click', () => {
-    popup.style.display= 'block';
-})
+    sobreClicada.classList.toggle("greenborder");
+  }
