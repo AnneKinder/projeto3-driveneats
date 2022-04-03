@@ -1,3 +1,8 @@
+let isbutton1active;
+let isbutton2active;
+let isbutton3active;
+
+
 function highlight1(){
     document.getElementById('frango-c').style.border = "4px solid green";
   
