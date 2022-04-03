@@ -2,11 +2,25 @@ let isbutton1active;
 let isbutton2active;
 let isbutton3active;
 
+function selecfrango(){
 
-function highlight1(){
-    document.getElementById('frango-c').style.border = "4px solid green";
+    document.getElementById('frango-c').classList.toggle('greenborder')
+ 
+
+    if 
+    
+    (document.getElementById('frango-c').classList.contains('greenborder')) {
+        document.getElementById('moqueca-c').classList.remove('greenborder')
+        document.getElementById('yakissoba-c').classList.remove('greenborder')}
+
+
+    }
+
+
+//function highlight1(){
+//    document.getElementById('frango-c').style.border = "4px solid green";
   
-}
+//}
 
 function highlight2(){
 
