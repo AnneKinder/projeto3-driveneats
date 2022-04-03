@@ -150,6 +150,7 @@ h3{
 
 button{
     border-style: none;
+     cursor: pointer;
 }
 .item{
     width: 172px;
