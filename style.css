@@ -1,7 +1,7 @@
 .tudo{
     width: 480px;
     height: 900px;
-    z-index: 2;
+    z-index: 1;
 }
 
 body{
@@ -147,7 +147,7 @@ h3{
     line-height: 19px;
     color: #000000;
 }
-button{
+   button{
         width: auto;
         height: 61px;
         background: #CBCBCB;
@@ -161,8 +161,8 @@ button{
         text-align: center;
         letter-spacing: 0.018em;
         color: #FFFFFF;
-        border-style: none;
-        cursor: pointer;
+    border-style: none;
+    cursor: pointer;
 }
 .item{
     width: 172px;
@@ -180,7 +180,7 @@ button{
     
 
 }
-.hidden{
+.escondido{
     display: none;
 }
 .principal{
@@ -194,3 +194,69 @@ button{
     border-radius: 9px;
 
 }*/
+
+/*testando pop-up*/
+*{
+    box-sizing: border-box;
+}
+
+/*.item:visited{
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
+    border-radius: 9px;
+
+}*/
+
+.popup-wrapper{
+    background: rgba(255, 255, 255, 0.7);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 480px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+.popup{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    background: #50D074;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);   
+    z-index: 3;
+    height:300px;
+    width: 300px;
+    position: relative;
+    
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    left:80px;
+   
+}
+.popup-conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fecharfinal2{
+    width: auto;
+        height: 61px;
+        background: #32B72F;
+        border-radius: 50px;
+        border:#FFFFFF;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 350;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        letter-spacing: 0.018em;
+        color: #FFFFFF;
+        border-style: none;
+        cursor: pointer;
+}
