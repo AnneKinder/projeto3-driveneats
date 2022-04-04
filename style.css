@@ -147,25 +147,7 @@ h3{
     line-height: 19px;
     color: #000000;
 }
-   button{
-       
-        width: auto;
-        height: 61px;
-        background: #CBCBCB;
-        border-radius: 50px;
-        border:#FFFFFF;
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 23px;
-        text-align: center;
-        letter-spacing: 0.018em;
-        color: #FFFFFF;
-        border-style: none;
-        cursor: pointer;
-    
-}
+
 .item{
     width: 172px;
     height: 216px;
@@ -180,11 +162,6 @@ h3{
 .greenborder {
     border: 4px solid green;
     
-
-}
-.fechar2{
-padding: 5px;
-
 }
 .fecharfinal2{
     width: 420px;
@@ -207,6 +184,25 @@ padding: 5px;
 
 .escondido{
     display: none;
+}
+button{
+       
+    width: auto;
+    height: 61px;
+    background: #CBCBCB;
+    border-radius: 50px;
+    border:#FFFFFF;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.018em;
+    color: #FFFFFF;
+    border-style: none;
+    cursor: pointer;
+
 }
 .principal{
     display: flex;
