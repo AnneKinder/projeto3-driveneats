@@ -24,32 +24,34 @@
         <div class="subtitulo">Sua comida em 6 minutos</div>
     </div> <!-- fecha topo  -->
 
+
+
 <div class="feed">
     <div class="intros">
         Primeiro, seu prato
     </div>
 
-    <div class="tipo prato">
-        <button class="frango item" onClick="selecPrato(this)" > <!-- prato 1  -->
+    <div class="tipo prato" >
+        <button class="frango item" onClick="selecPrato(this)" onClick="mudaBotao()" > <!-- prato 1  -->
         <img src="images/flango.jpg" />
             <h1> Frango Empanado</h1>
             <h2>Franguinho gostoso!</h2>
-            <h3>R$24,00</h3>
+            <h3>R$<span class="precocomida">24</span>,00</h3>
         </button>
         
 
-        <button class="item moqyeca"  onClick='selecPrato(this);' > <!-- prato 2  -->
+        <button class="item moqueca"  onClick='selecPrato(this);' onClick="mudaBotao()" > <!-- prato 2  -->
         <img src="images/moqueca.jpg" />
             <h1> Moqueca</h1>
             <h2> Com Camarão</h2>
-            <h3>R$28,00</h3>
+            <h3>R$<span class="precocomida">28</span>,00</h3>
         </button>
 
-        <button class="item yakissoba" onClick='selecPrato(this);' > <!--  prato 3  -->
+        <button class="item yakissoba" onClick='selecPrato(this);' onClick="mudaBotao()" > <!--  prato 3  -->
         <img src="images/yakissoba.jpg" />
         <h1> Yakissoba</h1>
         <h2>Yakissoba misto</h2>
-        <h3>R$23,00</h3>
+        <h3>R$</h3><span class="precocomida">22</span>,00</h3>
         </button>
     
     </div><!-- fecha todospratos  -->
@@ -60,25 +62,25 @@
     
     <div class="tipo bebida">
 
-        <div class="item pepsi" onClick='selecBebida(this);' > <!--  bebida 1 -->
+        <div class="item pepsi" onClick='selecBebida(this);' onClick="mudaBotao()" > <!--  bebida 1 -->
         <img src="images/pepsi.jpg" />
         <h1>Pepsi</h1>
         <h2>Pode ser?</h2>
-        <h3>R$4,00</h3>
+        <h3>R$<span class="precobebida">4</span>,00</h3>
         </div>
 
-        <div class="item coca-cola"  onClick='selecBebida(this);' > <!--  bebida 2 -->
+        <div class="item coca-cola"  onClick='selecBebida(this);' onClick="mudaBotao()" > <!--  bebida 2 -->
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBrKJJfCjc0lgd5EPrQzhS5EG6sCq0MzhLeA&usqp=CAU" />
         <h1>Coca-Cola</h1>
         <h2>Beeem gelada</h2>
-        <h3>R$5,00</h3>
+        <h3>R$<span class="precobebida">5</span>,00</h3>
          </div>
 
-         <div class="item agua"  onClick='selecBebida(this);' > <!--  bebida 3 -->
+         <div class="item agua"  onClick='selecBebida(this);' onClick="mudaBotao()" > <!--  bebida 3 -->
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlFA-335FUF8NKH90HiHPOAXgtRW0rYGtXXQ&usqp=CAU" />
         <h1>Água</h1>
         <h2>Vamo hidratar?</h2>
-        <h3>R$3,00</h3>
+        <h3>R$<span class="precobebida">3</span>,00</h3>
         </div>
 
     </div> <!-- fecha todasbebidas  -->
@@ -87,31 +89,31 @@
         Por fim, sua sobremesa
     </div>
 
-    <div class="tipo sobremesa">
+    <div class="tipo sobremesa" >
 
        
-        <div class="item tiramisu"  onClick='selecSobre (this)'> <!--  sobremesa 1 -->
+        <div class="item tiramisu"  onClick='selecSobre (this)' onClick="mudaBotao()" > <!--  sobremesa 1 -->
         <img src="images/tiramisu.jpg" />
         <h1> Tiramisu </h1>
         <h2>Super cremoso!</h2>
-        <h3>R$20,00</h3>
+        <h3>R$<span class="precosobrem">20</span>,00</h3>
         </div>
         
         
 
-        <div class="item pudim"  onClick='selecSobre (this)'> <!--  sobremesa 2 -->
+        <div class="item pudim"  onClick='selecSobre (this)' onClick="mudaBotao()" > <!--  sobremesa 2 -->
         <img src="/images/pudim de leite.jpg" alt="">
         <h1> Pudim de leite </h1>
         <h2>Receita de mãe</h2>
-        <h3>R$18,00</h3>
+        <h3>R$<span class="precosobrem">18</span>,00</h3>
         </div>
         </a>
 
-        <div class="item brigadeiro"  onClick='selecSobre (this)' > <!--  sobremesa 3 -->
+        <div class="item brigadeiro"  onClick='selecSobre (this)' onClick="mudaBotao()" > <!--  sobremesa 3 -->
         <img src="/images/brigadeiro.jpg" />
         <h1> Brigadeiro </h1>
         <h2>Bem chic</h2>
-        <h3>R$15,00</h3>
+        <h3>R$<span class="precosobrem">15</span>,00</h3>
         </div>
 
     </div><!-- fecha todassobrem -->
@@ -121,7 +123,7 @@
 
 </div>   <!-- fecha feed  -->
 
-<!-- pop up finalizar pedido -->
+<!-- pop up finalizar pedido (bônus) (não finalizado) -->
 <div class="todopop escondido">
 <div class="popup-wrapper">
     <div class="popup">
@@ -154,40 +156,21 @@
     </div>
 </div>
 </div>
+<!-- pop up finalizar pedido (bônus) (não finalizado)  -->
 
-
-<!-- pop up finalizar pedido -->
-
-
-
-<div class="fechar">
-    <button id="fecharpedido" onClick="fecharPedido(this)"> Selecione os 3 itens para fechar o pedido </button>
-</div>
-
-<div class="fecharfinal">
+<!-- botão (escondido) para enviar pro Whatsapp -->
+<div class="fecharfinal escondido" onClick='fecharPedido()'>
     <button class="fecharfinal2">Fechar pedido</button>
+</div>  
+
+<!-- botão cinza (inativo) -->
+<div class="fechar">
+    <button class="fechar2"> Selecione os 3 itens para fechar o pedido </button>
 </div>
 
 
-
-
-
-
-
-
-
-
-</div>
+</div> <!-- fecha .tudo -->
 
 <script src="/scripts.js"></script>
 </body>
 </html>
-
-<!-- 
-
-
-
-
-
-    
--->
