@@ -148,6 +148,7 @@ h3{
     color: #000000;
 }
    button{
+       
         width: auto;
         height: 61px;
         background: #CBCBCB;
@@ -155,14 +156,15 @@ h3{
         border:#FFFFFF;
         font-family: 'Roboto';
         font-style: normal;
-        font-weight: 350;
+        font-weight: 400;
         font-size: 20px;
         line-height: 23px;
         text-align: center;
         letter-spacing: 0.018em;
         color: #FFFFFF;
-    border-style: none;
-    cursor: pointer;
+        border-style: none;
+        cursor: pointer;
+    
 }
 .item{
     width: 172px;
@@ -180,6 +182,29 @@ h3{
     
 
 }
+.fechar2{
+padding: 5px;
+
+}
+.fecharfinal2{
+    width: 420px;
+        height: 61px;
+        background: #32B72F;
+        border-radius: 50px;
+        border:#FFFFFF;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        text-align: center;
+        color: #FFFFFF;
+        border-style: none;
+        position: fixed;
+        bottom: 16px;
+        left:24px;
+        z-index:3;
+}
+
 .escondido{
     display: none;
 }
@@ -243,20 +268,7 @@ h3{
     flex-direction: column;
     align-items: center;
 }
-.fecharfinal2{
-    width: auto;
-        height: 61px;
-        background: #32B72F;
-        border-radius: 50px;
-        border:#FFFFFF;
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 350;
-        font-size: 20px;
-        line-height: 23px;
-        text-align: center;
-        letter-spacing: 0.018em;
-        color: #FFFFFF;
-        border-style: none;
-        cursor: pointer;
+
+.corfundo{
+    background-color: pink;
 }
