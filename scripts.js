@@ -69,7 +69,7 @@ function selecSobre(sobreClicada) {
       const qtselecionados = document.getElementsByClassName("greenborder").length;
 
       if ( qtselecionados == 3){ {
-        botao.classList.remove("escondido");
+        botao[0].classList.remove("escondido");
         }
     }
 
