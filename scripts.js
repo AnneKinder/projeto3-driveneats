@@ -1,6 +1,9 @@
 let pratoselecionado;
 let bebidas;
 let sobremesas;
+let opcao1;
+let opcao2;
+let opcao3;
 
 
 function selecPrato(pratoClicado) { //pode colocar elemento que nao está no HTML, pois usou o this. só vai usar esse elemento pra add classe no js.
@@ -44,8 +47,7 @@ function selecSobre(sobreClicada) {
 
    opcao2 =  document.querySelector(".tudo .feed .bebida .greenborder h1").innerHTML;
    preco2 = document.querySelector(".tudo .feed .bebida .greenborder h3").innerHTML;
-   preco2
-
+ 
 
     opcao3 = document.querySelector(".tudo .feed .sobremesa .greenborder h1").innerHTML;
     preco3 = document.querySelector(".tudo .feed .sobremesa .greenborder h3").innerHTML;
@@ -82,12 +84,21 @@ function selecSobre(sobreClicada) {
     
     
      function fecharPedido(){
-      let precototal= Number(precocomida) + Number(precobebida) + Number(precosobrem);
+      let precocomida = document.querySelector(".precocomida").innerHTML;
+      let precobebida = document.querySelector(".precobebida").innerHTML;
+      let precosobrem = document.querySelector(".precosobrem").innerHTML;
+
+     let opcao1 = document.querySelector(".tudo .feed .prato .greenborder h1").innerHTML;
+     let opcao2 =  document.querySelector(".tudo .feed .bebida .greenborder h1").innerHTML;
+     let opcao3 = document.querySelector(".tudo .feed .sobremesa .greenborder h1").innerHTML;
+   
+      
+        let precototal= Number(precocomida) + Number(precobebida) + Number(precosobrem);
       const mensagem = "Olá, gostaria de fazer o pedido:" + "\n"+
       "- Prato: " + opcao1 + "\n" +
       "- Bebida: " + opcao2 + "\n" +
       "- Sobremesa: "+ opcao3 + "\n" +
-      "Total: " + precototal + ",00";
+      "Total: R$" + precototal + ",00";
       const mensagemEncoded = encodeURIComponent(mensagem);
       const url = "https://wa.me/5511993325057?text=" + mensagemEncoded
       window.open(url, "_blank");
